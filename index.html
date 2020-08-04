@@ -1,0 +1,325 @@
+<!--
+    Task Number : 1
+    File Name : index.html
+    Written by : Shaakir Caroto
+    Date Written : 03/08/2020
+    Function: This is a website that show tells the user information about myself and the shows the user that project
+    I have done and using CSS 
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <!--
+        Creating the title of the website
+    -->
+    <head>
+        <title>The Website of Shaakir Caroto</title>
+    </head>
+
+    <!--
+        Implementing the CSS style tags to get the website a different look 
+        Setting variables for the website
+        and creating classes with different parameter
+    -->
+    <style>
+        
+        /*
+        Setting the colour, font type, margin size and padding size
+        padding is the inner space of the website
+        */
+        body{
+            margin: 0;
+            font-family: Arial;
+            padding: 10px;
+            background: lightblue;
+        }
+
+         
+        /*
+        Setting the colour of the header space
+        and the alignment of the text of the hearder
+        and the padding of the header
+        */
+        .header{
+            background-color: gray;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /*
+        Setting the parameter for the tag ul which is an unordered list of items
+        Setting the style of the list 
+        Setting the mergin and the overflow 
+        the overflow is what happends if the content overflows
+        And the colour of the background
+        
+        This is used in the creation of the navigation bar
+        */
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: lightgray;
+        }
+
+        /* This is used to display the list navigation bar */
+        li {
+        float: left;
+        }
+
+        /* Style The Dropdown Button */
+        li a, .dropbtn {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        /* Getting the colour of the hover */
+        li a:hover, .dropdown:hover .dropbtn {
+        background-color: grey;
+        }
+
+        /* The container for the div tag - needed to position the dropdown content */
+        li.dropdown {
+        display: inline-block;
+        }
+
+        /* The dropdown container */        
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        /* Creating a column of information and setting
+        it to the left of the website */
+        .leftcolumn {   
+        float: left;
+        width: 75%;
+        }
+
+        /* This is used to seperate the infoprmation in to parts */
+        .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        }
+
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        /* Creating a column of information and setting
+        it to the left of the website */
+        .rightcolumn {
+        float: right;
+        width: 23%;
+        background-color: #f1f1f1;
+        }
+        
+        /*
+        Creating a class to align a image to the center of the card that the image is in
+        */
+        .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        }
+
+    </style>    
+    <body>
+     
+        <!--
+            Using the header tag to create the header of my webpage and using the CSS class that was created
+        -->
+        <div class=" header">
+            <h2> <u>The CV website of Shaakir Caroto</u></h2> 
+        </div>
+        
+        <!--
+            Creating that drop down menu with the links to my contact details 
+            Using the dropdown claases
+        -->
+        <ul>
+            <li class = "dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Contact Information</a>
+                <div class="dropdown-content">
+                    <a href = "tel:0769886469">Shaakir Caroto Cellphone number</a> 
+                    <a href = "mailto:shaakircar73@gmail.com">Shaakir Caroto Email Address</a>
+                    <a href = "https://www.linkedin.com/in/shaakir-caroto-17a8131ab/">Linkedin Profile</a> 
+                </div>
+            </li>
+        </ul>
+
+        <!--
+            Creating that drop down menu with the links to my github Accounts 
+            Using the dropdown claases
+        -->
+        <ul>
+            <li class="dropdown">
+                <a href="https://github.com/Shaakir19" class="dropbtn">GitHub Account Link and My projects</a>
+                <div class="dropdown-content">
+                    <a href = "https://github.com/Shaakir19/Finance_Calculator">Python Finance_Calculator</a> 
+                    <a href = "https://github.com/Shaakir19/Task_Manager_V2">Python Task Manager</a> 
+                    <a href = "https://github.com/Shaakir19/Project_Manager_V2">Java Project Manager</a> 
+                    <a href = "https://github.com/Shaakir19/Project_Manager">Java Project Manager with SQL Database functions</a> 
+                </div>
+            </li>
+        </ul>
+
+        <!--
+            Creating of the card and the rows to divide the information 
+            Using the row class to keep the column in order
+        -->
+        <div class = "row">
+
+            <!--
+                Creating the right column with my contact information
+                and calling the right column class
+            -->
+            <div class = "rightcolumn">
+                <div class = "card">
+                    <h3><u>  Contact Details  </u> </h3>
+                    <body>
+                        <p>
+                            Phone Number : 0769886469 <br>
+                            e-mail : shaakircar73@gmail.com <br>
+                            Linkedin Profile : <a href = "https://www.linkedin.com/in/shaakir-caroto-17a8131ab/">Shaakir Caroto</a> <br>
+                        </p>  
+                    </body>
+                </div>
+            </div>
+              
+            <!--
+                Creating the left column with information about me
+                and calling the left column class
+                and the card classes with the pre-set variable on the above 
+            -->
+            <div class = "leftcolumn">
+                <div class = "card">
+                    <h2 style="text-align: center;"><u> A little about Me </u> </h2>
+            
+                    <body style="text-align: center;">
+                        <img src="20190913_232518.jpg" alt = "Shaakir Caroto Image" width="350" height = "250" class = "center">
+                        <p>
+                        My name is Shaakir Caroto. I live in johannesburg, I am currently a student a UNISA studying 
+                        a bachelor's degrees in computer science and mathematics, I am still in my first year.
+                        I do most my work at home. I have completed my matric thought bryanston high school in 2019, where
+                        i took Information Technology, Science, Mathematics, Accounting, English and Afrikaans.
+                        <br>
+                        I have some work experience as a casual worker at Liquor City Southgate, where i pack shelves, help customers, drop money in the safe to help
+                        cash the shop up and work on the till as a cashier, I work mostly when it is busy like christmas, the end of year hoildays when it is busy and my
+                        father is short handed.
+                        <br>
+                        My passions is my car and car in general, going to gym at EFC Sunninghill, games, i also practice MMA like boxing, kickboxing and jiu jitsu . 
+                        I hope to one day work in IT security, as a penetration tester.
+                        The things that motivates is having a problem and i have the tools to fix it, making a program that works and has some complexity and 
+                        doing some that is fun.
+                        <br>
+                        </p>
+                   </body>
+                   
+                   
+                </div>
+
+                <!--
+                    Calling the card class and the other variables to disdaply the information about me
+                -->
+                <div class = "card">
+                    <h2 style="text-align: center;"> <u>My education</u> </h2>
+                    <body style="text-align: center;">
+                        <h3 style="text-align: center;"> Bryanston High School </h3>
+                        <p>
+                            I went to bryanston high from 2015 to 2019 where I matriculate. My subject in my matric year was English, Mathematics, Afrikaans, Life Orientation,
+                            Physical Science and Information Technology where I learn delphi. I played rugby in my first three year of rugby and during that time I got into MMA 
+                            training and gym.
+                        </p>
+                        
+                        <h3 style="text-align: center;"> University of South Africa </h3>
+                        <p>
+                            I am current at UNISA doing my Bsci of computer science and mathematics. I started at the beginning of 2020, i do this course at house through
+                            the myUNISA website where i do all of my assignments and exams, I am learning C++ coding. I do this with my Bootcamp.
+                        </p>
+        
+                        <h3 style="text-align: center;"> Hyperion Bootcamp (Software Enginnering Bootcamp) </h3>
+                        <p>
+                            I have learned how to do python and java coding in the bootcamp, I have my some of my projects on github. 
+                        </p>
+        
+                        <h3 style="text-align: center;"> Certifications </h3>
+                        <p>
+                            I am currently working on my CompTIA A+ certification and then i will continue onto my CompTIA N+,
+                            the A+ is the gneral computer course and the N+ is networks
+                        </p>
+                    </body>    
+                </div>
+
+                <!--
+                    Calling the card class and the other variables to disdaply the information about me
+                -->
+                <div class = "card">
+                    <h2 style="text-align: center;"><u> Skills and competencies</u> </h2>
+                    <body style="text-align: center;">
+                        <p>
+                            I can work with Python, Java, C++, delphi and SQL coding, I have used them in my studies.<br>
+                            I am wanting to learn more. <br>
+                            I can learn new things quickly and always wanting to learn more and be better. <br>
+                            I am able to work under pressure. <br>
+                        </p>  
+                    </body>
+                </div>
+
+                <!--
+                    Calling the card class and the other variables to disdaply the information about me
+                -->
+                <div class = "card">
+                    <h2 style="text-align: center;"><u> My Work Experience </u></h2>
+                    <body style="text-align: center;">
+                        <h3 style="text-align: center;"> Liquor City Southgate</h3>
+
+                        <p>
+                            My work experience comes from my work at Liquor City where i help during the busy hoildays went  the shop needed an extra
+                            hand to help out, I help with the packing of selves, working on the till as an extra cashier and helped packing
+                            the customers things in a packet 
+                        </p>
+                    </body>  
+                </div>
+            </div>
+           
+
+           
+
+        </div>
+
+       
+
+    </body>
+  
+</html>
